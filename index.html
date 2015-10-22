@@ -30,34 +30,7 @@ window.plugin.notification.local.add({
 
 function dothisonload(){
 
-		parsePlugin.initialize('khkU5e54h04HNCvj8PxMb1H84aKyUHPdL1LAsTNB','34GXbwMD5F2dy9VqwH31UlA5T3nvJB4Z1M6qO8Ei', function() {
-
-    parsePlugin.subscribe('alcodrop', function() {
-
-        parsePlugin.getInstallationId(function(id) {
-
-            /**
-             * Now you can construct an object and save it to your own services, or Parse, and corrilate users to parse installations
-             * 
-             var install_data = {
-                installation_id: id,
-                channels: ['SampleChannel']
-             }
-             *
-             */
-
-        }, function(e) {
-            alert('error');
-        });
-
-    }, function(e) {
-        alert('error');
-    });
-
-}, function(e) {
-    alert('error');
-});	
-
+		
 }
 
 function clearall() {
@@ -657,7 +630,7 @@ function paystart() {
 
 <div id="splashstart" style="text-align:center; position:absolute; width:100%; height:100%; background-repeat: no-repeat; background-position: center top; background-size: 100% 100% !important; background-color:#58585A; z-index:1000;">
 <br><br><br><br>
-<img src="logo.jpg" class="animated fadeIn" width="400" style="margin-left:-10px; -webkit-animation-delay: 2s;">
+<img src="logo.jpg" class="animated fadeIn" width="100%" style="-webkit-animation-delay: 2s;">
 <div id="selectdrink" class="animated fadeIn" onclick="
 document.getElementById('splashstart').className = 'animated fadeOut';setTimeout(function(){
 document.getElementById('splashstart').style.display='none';},1000);
